@@ -1,0 +1,93 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: whitesmoke;
+    font-family: monospace;
+}
+
+.navbar{
+    width: 100%;
+    background-color: white;
+    box-shadow: 5px 5px 5px 2px lightgrey;
+}
+
+.nav-header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem;
+}
+
+.nav-toggle{
+    border: none;
+    color: rgb(134, 206, 230);
+    font-size: 2rem;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+.navlist{
+    height: 0;
+    overflow: hidden;
+    list-style-type: none;
+}
+.navlist a{
+    display: block;
+    padding: 1rem;
+    border: 1px solid rgba(211, 211, 211, 0.3);
+    text-align: center;
+    text-decoration-line: none;
+    font-size: 1.3rem;
+    color: rgb(10, 206, 255);
+    text-shadow: 1px 2px lightblue;
+}
+
+.show-menu{
+    height: 232px;
+}
+
+.atention{
+    margin: 10px 10px 0 0;
+    color: rgba(128, 128, 128, 0.5);
+    float: right;
+    display: none;
+}
+.atention2{
+    margin: 10px 10px 0 0;
+    color: rgba(128, 128, 128, 0.5);
+    float: right;
+}
+@media screen and (min-width: 769px){
+    .nav-toggle{
+        display: none;
+    }
+
+    .navlist{
+        height: auto;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-right: 30px;
+    }
+
+    .navlist a{
+        border: none;
+        padding: 0 30px;
+    }
+
+    .navbar{
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .atention{
+        display: block;
+    }
+    .atention2{
+        display: none;
+    }
+}
